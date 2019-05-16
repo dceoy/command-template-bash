@@ -1,9 +1,9 @@
-bash-command-template
+command-template-bash
 =====================
 
-Template bash script for command-line tool development
+Tiny and portable bash script as a shell command
 
-- Tiny and portable script as an executable command
+- Script scaffold for command-line tool development
 - Features:
   - Command-line argument parser
     - `--debug`: debug mode
@@ -18,13 +18,13 @@ Usage
 1.  Check out the repository.
 
     ```sh
-    $ git clone https://github.com/dceoy/bash-command-template.git
+    $ git clone https://github.com/dceoy/command-template-bash.git
     ```
 
 2.  Copy, rename and edit `command.sh`.
 
     ```sh
-    $ cp bash-command-template/command.sh your_command.sh   # into your command's name
+    $ cp command-template-bash/command.sh your_command.sh   # into your command's name
     ```
 
 Default options
@@ -32,7 +32,7 @@ Default options
 
 ```sh
 $ ./command.sh --help
-Template bash script for command-line tool development
+Tiny and portable bash script as a shell command
 
 Usage:
   command.sh [--debug] [--cpus=<int>] [--bool] [--var=<str>] [<arg>...]

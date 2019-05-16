@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Template bash script for command-line tool development
+# Tiny and portable bash script as a shell command
 #
 # Usage:
 #   command.sh [--debug] [--cpus=<int>] [--bool] [--var=<str>] [<arg>...]
