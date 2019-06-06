@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 #
-# Tiny and portable bash script as a shell command
+# Tiny and portable bash script as an executable command
 #
 # Usage:
 #   command.sh [--debug] [--cpus=<int>] [--bool] [--var=<str>] [<arg>...]
-#   command.sh -h|--help
 #   command.sh --version
+#   command.sh -h|--help
 #
 # Options:
 #   --debug           Debug mode
 #   --cpus=<int>      Limit CPUs for multiprocessing
 #   --bool            Option without an argument
 #   --var=<str>       Option with an argument
-#   -h, --help        Print usage
 #   --version         Print version
+#   -h, --help        Print usage
 #
 # Arguments:
 #   <arg>             Main arguments
