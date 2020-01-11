@@ -18,7 +18,7 @@
 # Arguments:
 #   <arg>             Main arguments
 
-set -ue
+set -euo pipefail
 
 if [[ ${#} -ge 1 ]]; then
   for a in "${@}"; do
