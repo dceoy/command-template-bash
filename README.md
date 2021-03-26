@@ -18,8 +18,8 @@ Usage
 1.  Download `command.sh`.
 
     ```sh
-    $ curl -SLO https://raw.githubusercontent.com/dceoy/command-template-bash/master/command.sh
-    $ chmod +x command.sh
+    $ git clone https://github.com/dceoy/command-template-bash.git
+    $ cd command-template-bash
     ```
 
 2.  Test `command.sh`.
