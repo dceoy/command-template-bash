@@ -68,28 +68,28 @@ function abort {
 
 while [[ ${#} -ge 1 ]]; do
   case "${1}" in
-    '--debug' )
+    --debug )
       shift 1
       ;;
-    '--bool' )
+    --bool )
       OPTION_BOOL=1 && shift 1
       ;;
-    '--var' )
+    --var )
       OPTION_VAR="${2}" && shift 2
       ;;
     --var=* )
       OPTION_VAR="${1#*\=}" && shift 1
       ;;
-    '--cpus' )
+    --cpus )
       CPUS="${2}" && shift 2
       ;;
     --cpus=* )
       CPUS="${1#*\=}" && shift 1
       ;;
-    '--version' )
+    --version )
       print_version && exit 0
       ;;
-    '-h' | '--help' )
+    -h | --help )
       print_usage && exit 0
       ;;
     -* )
