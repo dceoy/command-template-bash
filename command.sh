@@ -8,12 +8,12 @@
 #   command.sh -h|--help
 #
 # Options:
-#   --debug           Debug mode
+#   --debug           Enable debug mode
 #   --cpus=<int>      Limit CPUs for multiprocessing
 #   --bool            Option without an argument
 #   --var=<str>       Option with an argument
-#   --version         Print version
-#   -h, --help        Print usage
+#   --version         Print version information and exit
+#   -h, --help        Print this help text and exit
 #
 # Arguments:
 #   <arg>             Main arguments
