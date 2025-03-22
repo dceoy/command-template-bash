@@ -26,16 +26,16 @@ if [[ ${#} -ge 1 ]]; then
   done
 fi
 
-COMMAND_PATH=$(realpath "${0}")
-COMMAND_NAME=$(basename "${COMMAND_PATH}")
-COMMAND_VERSION='v0.0.1'
+COMMAND_PATH="$(realpath "${0}")"
+COMMAND_NAME="$(basename "${COMMAND_PATH}")"
+COMMAND_VERSION='v0.1.0'
 
 case "${OSTYPE}" in
   darwin* )
-    CPUS=$(sysctl -n hw.ncpu)
+    CPUS="$(sysctl -n hw.ncpu)"
     ;;
   linux* )
-    CPUS=$(grep -ce '^processor\s\+:' /proc/cpuinfo)
+    CPUS="$(grep -ce '^processor\s\+:' /proc/cpuinfo)"
     ;;
   * )
     CPUS=1
@@ -59,7 +59,6 @@ function abort {
     if [[ ${#} -eq 0 ]]; then
       cat -
     else
-      COMMAND_NAME=$(basename "${COMMAND_PATH}")
       echo "${COMMAND_NAME}: ${*}"
     fi
   } >&2
